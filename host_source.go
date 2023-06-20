@@ -649,7 +649,6 @@ func isValidPeer(host *HostInfo) bool {
 	return !(len(host.RPCAddress()) == 0 ||
 		host.hostId == "" ||
 		host.dataCenter == "" ||
-		host.rack == "" ||
 		len(host.tokens) == 0)
 }
 
